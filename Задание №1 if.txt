@@ -1,0 +1,26 @@
+ИС-22/9-П Хуснутдинов Марат
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main() {
+    float x, y, z, p, s;
+    while (true)
+    {
+        cout<<"\nx="; cin>>x;
+        cout<<"\ny="; cin>>y;
+        cout<<"\nz="; cin>>z;
+        if (x<0||y<0||z<0)
+        {
+            cout<<"\n Невозможно построить треугольник";
+        }
+        else
+        {
+            p = (x+y+z)/2;
+            s = sqrt(p*(p-x)*(p-y)*(p-z));
+            cout<<"\nФормула Герона : "<<p;
+            cout<<"\nФормула Треугольника : "<<s;
+        }
+    }
+    
+    return 0;
+}

@@ -1,0 +1,29 @@
+ИС-22/9-П Хуснутдинов Марат
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main() {
+    int i;
+    string months[12] = {
+      "January", 
+      "February", 
+      "March", 
+      "April", 
+      "May", 
+      "June", 
+      "July", 
+      "August", 
+      "September", 
+      "October", 
+      "November", 
+      "December"};
+  while (true)
+  {
+      cout<<"\n Bведите номер месяца="; cin>>i;
+      if (i<12||i<1)
+      {
+          cout<<"\n"<<months[i-1];
+      }
+  }
+  return 0;
+}
