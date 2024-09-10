@@ -1,0 +1,13 @@
+ИС-22/9-П Хуснутдинов Марат
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main() {
+    int N = 0;
+    while (N !=5)
+    {
+        cout <<"\n= Привет!";
+        N++;
+    }
+    return 0;
+}
