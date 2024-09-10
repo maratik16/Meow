@@ -1,0 +1,22 @@
+ИС-22/9-П Хуснутдинов Марат
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main() {
+    int a,b,c;
+    cout <<"Введите a= "; cin >>a;
+    cout <<"Введите b= "; cin >>b;
+    if((a>0) && (b>0))
+    {
+        a = 2*a+b;
+        b = pow(b,2);
+    }
+    else
+    {
+        a = abs(a);
+        b = abs(b);
+    }
+    c = a + b;
+    cout << "a = " << a << " b = " << b << " c = " << c <<
+    return 0;
+}
