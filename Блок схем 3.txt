@@ -1,0 +1,17 @@
+ИС-22/9-П Хуснутдинов Марат
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main() {
+    int a,b;
+    cout <<"\na="; cin>>a;
+    cout <<"nb="; cin>>b;
+    while (a !=b)
+    if (a>b)
+    a=a-b;
+    else
+    b=b-a;
+    cout <<"\na=" <<a;
+    cout <<"\nb=" <<b;
+    return 0;
+}
