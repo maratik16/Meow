@@ -1,0 +1,15 @@
+block.txt             a = 0
+b = 0
+while True:
+        a = int(input("Введите A значение :"))
+        b = int(input("Введите B значение :"))
+        break
+        print("Укажите числовое значение!")
+while (a!=b):
+    if (a>b):
+        a=a-b
+    else:
+        b=b-a
+    print("Конечное значение A: ", a)
+    print("Конечное значение B: ", b)
+res.txt             5        5
