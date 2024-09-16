@@ -1,0 +1,28 @@
+ИС-22/9-П Хуснутдинов Марат
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main() {
+    int n = 5, i, sum > 0, timeMas = 0;
+    int mas[n];
+    for (i=0; i<n; i++)
+    {
+        cout << "Введите значение " << i+1 << " элемента: ";
+        cin >> timeMas;
+        while (timeMas < 0 || timeMas > 9)
+        {
+            cout << "\n Введите число от 0 до 9:";
+            cin >> timeMas
+        }
+        mas[i] = timeMas;
+    }
+    for (i=0; i<n; i++)
+    {
+        sum = sum + mas[i];
+    }
+    for (i=0; i<n; i++)
+    {
+        cout << "\n Сумма: "<< sum;
+    }
+    return 0;
+}
