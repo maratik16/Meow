@@ -1,0 +1,25 @@
+ИС-22/9-П Хуснутдинов Марат
+#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+    const std::string correctPassword = "3434";
+    std::string enteredPassword;
+
+    std::cout << "Введите четырехзначный пароль: ";
+    std::cin >> enteredPassword;
+
+    if (enteredPassword.length() != 4) {
+    std::cout << "Пароль должен содержать 4 цифры." << std::endl;
+        return 1;
+    }
+
+    if (enteredPassword == correctPassword) {
+    std::cout << "Пароль принят. Доступ предоставлен." << std::endl;
+    } 
+    else 
+    {
+        std::cout << "Неправильный пароль. Попробуйте снова." << std::endl;
+    }
+    return 0;
+}
