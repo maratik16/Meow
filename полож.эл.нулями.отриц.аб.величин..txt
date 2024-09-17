@@ -1,0 +1,34 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main() {
+    int n = 4, y = 3, i, j;
+    int C[n][y];
+    for(i=0; i<n; i++) 
+    {
+        for(j=0; j<y; j++) 
+        {
+            cout << "\nВведите " << i << " " << j << " ";
+            cin >> C[i][j];
+        }
+    }
+    for(i=0; i<n; i++) 
+    {
+        for(j=0; j<y; j++) 
+        {
+            if(C[i][j] > 0)
+            C[i][j] = 0;
+            else
+            C[i][j] = abs(C[i][j]);
+        }
+    }
+    for(i=0; i<n; i++) 
+    {
+        for(j=0; j<y; j++) 
+        {
+            cout << C[i][j] << " ";
+        }
+        cout << "\n";
+    }
+    return 0;
+}
