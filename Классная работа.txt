@@ -1,0 +1,28 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main()
+{
+    int i;
+    float a,b,c,p,s;
+    cout<<"\n Привет meow";
+    while (true)
+    {
+        cout<<"\n 123 : "<<i;
+        cout<<"\na="; cin>>a;
+        cout<<"\nb="; cin>>b;
+        cout<<"\nc="; cin>>c;
+        p=(a+b+c)/2;
+        s=sqrt(p*(p-a)*(p-b)*(p-c));
+        if (s > 15)
+        {
+            cout<<"\n meow";
+        }
+        else
+        {
+            cout<<"\n bark";
+        }
+        cout << "\n Площадь треугольника = " << s;
+    }
+    cout << "\n The End";
+    return 0;
