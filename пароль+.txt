@@ -1,4 +1,4 @@
-ИС-22/9-П Хуснутдинов Марат
+//ИС-22/9-П Хуснутдинов Марат + немного AI
 #include <iostream>
 #include <string>
 using namespace std;
