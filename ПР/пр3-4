@@ -1,0 +1,34 @@
+//Хуснутдинов Марат
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+#define N 1
+int main (void)
+{
+int a, b, maxab;
+unsigned int some;
+long int L;
+L = (long) time(NULL);
+some = (unsigned) L / 2;
+srand(some);
+a = rand();
+b = rand();
+printf("\n\t Случайные числа: a = %d; b = %d\n", a, b);
+maxab = (a > b) ? a : b;
+if (maxab == a) {
+printf("\n\t Максимальное количество: a = %d\n", a);
+} else {
+printf("\n\t Максимальное количество: b = %d\n", b);
+}
+printf("\n\t Вектор из 10 случайных чисел от 0 до 1:\n");
+for (int i = 0; i < 10; i++) {
+printf("%f ", (float)rand() / RAND_MAX);
+}
+float num;
+printf("\n\nВведите число с плавающей запятой: ");
+scanf("%f", &num);
+float absNum = (num >= 0) ? num : -num;
+printf("\n\t Абсолютное значение %.2f и %.2f\n", num, absNum);
+printf("\n Press any key: ");
+return 0;
+}
