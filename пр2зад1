@@ -1,0 +1,17 @@
+//Хуснутдинов Марат
+#include <stdio.h>
+#include <iostream>
+using namespace std;
+int main () {
+    float a,b,c;
+    int m,n;
+    a = 32.4;
+    b = 00.5;
+    c = 2314.45;
+    m = 87;
+    n = 4567;
+    printf("\na=%8.3fd=%7.2fc=%12.3e",a,b,c);
+    printf("\nm=%10dn=%5d",m,n);
+    
+    return 0;   
+}
