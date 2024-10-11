@@ -1,0 +1,49 @@
+//Хуснутдинов Марат
+#include <iostream>
+#include <math.h>
+using namespace std;
+float formP(float x, float y, float z)
+{
+    float p;
+    p = (x + y + z)/2;
+    return p;
+}
+float formS(float x, float y, float z)
+{
+    float p,s;
+    p = formP(x, y, z);
+    s = sqrt(p*(p-x)*(p-y)*(p-z));
+    return p,s;
+}
+
+void Result(float s)
+{
+    if (s > 15)
+    {
+        cout <<"\n Площадь большая больше 15";
+        cout <<"\n Площадь Треугольника = " << s;
+        else
+        cout <<"\n Площадь большая меньше 15";
+         cout <<"\n Площадь Треугольника = " << s;
+    }
+    float a,b,c,p,s;
+    cout << "\nКод запущен";
+    while (true)
+    {
+        cout << "\na="; cin >> a;
+        cout << "\nb="; cin >> b;
+        cout << "\nc="; cin >> c;
+        s=formS(a, b, c);
+        if (s > 15)
+        {
+            cout <<"\n Площадь большая";
+        }
+        else
+        {
+            cout <<"\n Площадь маленькая";
+        }
+        cout <<"\n Площадь треугольника = " << s;
+   }
+   cout <<"\n Конец кода";
+   return 0;
+}
