@@ -1,0 +1,25 @@
+//Хуснутдинов Марат
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main()
+{
+    float a, b, c;
+    cout <<"\nа="; cin>>a;
+    cout <<"\nb="; cin>>b;
+    if ((a>0) && (b>0))
+       {
+        a=2*a+b;
+        b=b*b;
+       }
+    else
+        {
+        a=abs(a);
+        b=abs(b);
+        }
+    c=a+b;
+    cout<<"\na=" <<a;
+    cout<<"\nb=" <<b;
+    cout<<"\nc=" <<c;
+    return 0;
+}
