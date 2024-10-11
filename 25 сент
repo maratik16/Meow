@@ -1,0 +1,48 @@
+//Хуснутдинов Марат
+#include <iostream>
+#include <stdio.h>
+using namespace std;
+int main() {
+    int const N=3; int i; bool nextGroup = true;
+    float maxs;
+    struct student {
+        char fam[30];
+        int kurs;
+        char grup[10];
+        float stip;
+    };
+    student stud[N];
+    for (i=0; i<N; i++) {
+        printf("\n%d-й студент", i+1);
+        printf("\nФамилия : ");
+        scanf("%s", &stud[i].fam);
+        printf("\nГруппа: ");
+        scanf("%s", &stud[i].grup);
+        printf("\nСтипендия: ");
+        scanf("%f", &stud[i].stip);
+    }
+    for (i=0; i<N; i++) {
+        if (nextGroup == true) {
+            for (i=0; i<N; i++) {
+                if (stud[i].grup!=stud[i+1].grup) {
+                    printf("\nГруппа : %s", stud[i].grup);
+                    printf("\nФамииля : %s", stud[i].fam);
+                    printf("\nСтепендия : %s", stud[i].stip);
+                }
+                maxs=0;
+                for (i=0; i<N; i++) {
+                    if (stud[i].stip>maxs) {
+                        maxs=stud[i].stip;
+                    }
+                }
+                for (i=0; i<N; i++) {
+                    if (stud[i].stip==maxs) {
+                        printf("\nСтудент %s получающий максимальную степендию в размере %f в группе %s", stud[i].fam, maxs, stud[i].grup);
+                    }
+                }
+                
+            }
+        }
+    }
+    return 0;
+}
