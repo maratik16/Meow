@@ -1,0 +1,43 @@
+//Хуснутдинов Марат
+#include <stdio.h>
+int main() 
+{
+float value1, value2;
+char operat;
+printf("\n\t Введите выражение: ");
+scanf("%f%c%f", &value1, &operat, &value2);
+if (operat == '+') 
+{
+    printf("\n\t Result: %1.4f\n", value1 + value2);
+} else if (operat == '-') {
+    printf("\n\t Result: %1.4f\n", value1 - value2);
+} else if (operat == '*') {
+    printf("\n\t Result: %1.4f\n", value1 * value2);
+} else if (operat == '/') {
+    if (value2 != 0) {
+        printf("\n\t Result: %1.4f\n", value1 / value2);
+    } else {
+        printf("\n\t Деление на ноль.\n");
+    }
+} else {
+    printf("\n\t Введите допустимый оператор.\n");
+}
+printf("\n\t Введите время: ");
+int time;
+scanf("%d", &time);
+if (time >= 0 && time < 6) {
+    printf("\n\t Ночь\n");
+} else if (time >= 6 && time < 12) {
+    printf("\n\t Утро\n");
+} else if (time >= 12 && time < 18) {
+    printf("\n\t День\n");
+} else if (time >= 18 && time < 22) {
+    printf("\n\t Вечер\n");
+} else if (time >= 22 && time < 24) {
+    printf("\n\t Ночь\n");
+} else {
+    printf("\n\t Error.\n");
+}
+printf("\n Press any key: ");
+return 0;
+}
