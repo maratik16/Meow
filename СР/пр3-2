@@ -1,0 +1,38 @@
+//Хуснутдинов Марат
+#include <stdio.h>
+#include <math.h>
+int main(void)
+{
+    int a, b, c;
+    float D, x1, x2, x;
+    printf("\n\t Уравнение a*x ^ 2 + b*x + c = 0\n");
+    printf("\n\t Введите коэффициент a: ");
+    scanf("%d", &a);
+    printf("\t Введите коэффициент b: ");
+    scanf("%d", &b);
+    printf("\t Введите коэффициент c: ");
+    scanf("%d", &c);
+    D = b*b-4*a*c;
+    if (D>=0 && a!=0 && b!=0)
+    {
+        x1 = -b/(2*a)+sqrt((float)D)/(2*a);
+        x2 = -b/(2*a)-sqrt((float)D)/(2*a);
+        printf("\n\t Корни уравнения:\n\t x1 = %1.4f, x2 = %1.4f\n", x1, x2);
+    }
+    else
+    {
+        if (a==0 && b!=0)
+        {
+            x = -c/b;
+            if (c!=0)
+                printf("\n\t Так как a = %1.0f,\n\t то решением уравнения является: %1.4f\n", a, x);
+            else
+                printf("\n\t Так как a = %1.0f и c = %1.0f,\n\t то решением уравнения является: %1.0f\n", a, -x);
+        }
+        if (D<0)
+            printf("\n\t Корни имеют сложную структуру\n");
+    }
+
+    printf("\n Press any key: ");
+    return 0;
+}
