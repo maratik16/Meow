@@ -1,0 +1,26 @@
+//Хуснутдинов Марат
+#include <stdio.h>
+int main(void) 
+{
+int x;
+printf("\n\t Enter a whole number between 1 and 12: ");
+scanf("%d", &x);
+int season = (((x+3)%12)/3)+1;
+switch (season) {
+    case 1 :
+        printf("\n\t Зима\n");
+        break;
+    case 2 :
+        printf("\n\t Весна\n");
+        break;
+    case 3 :
+        printf("\n\t Лето\n");
+        break;
+    case 4 :
+        printf("\n\t Осень\n");
+        break;
+    default:
+        printf("\n\t Error\n");
+}
+return 0;
+}
