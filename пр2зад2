@@ -1,0 +1,33 @@
+//Хуснутдинов Марат
+#include <stdio.h>
+#include <math.h>
+int main (void) { 
+    char ch;
+    int a, b;
+    float x;
+    double y, z, U, F, L;
+    ch = 'D';
+    a = 2; b = 5;
+    x = 5.5F;
+    y = 6;
+    z = ch + a + b + x + y;
+    U = ch * a / b + (4*x) * 10 / y;
+    F = ch + (x*y - a + b);
+    L = ch * a + (b + x + y);
+    
+    printf("\n\t The result of the conversion types: %lf\n", z);
+    
+    z = (double) ch + (double) a + (double) b  + (double) x + y;
+
+    printf("\n\t The apparent conversion types: %lf\n", z);
+    z = sqrt((double)a/b);
+    printf("\n\t z = sqrt(%d/%d) = %lf\n", a, b, z);
+    printf("\n\t z = lg(%d/%d) = %lf\n", a, b, log10(z));
+    printf("\n\t z = ln(%d/%d) = %lf\n", a, b, log(z));
+    printf("\n\t U = %lf\n", U);
+    printf("\n\t F = %lf\n", F);
+    printf("\n\t L = %lf\n", L);
+    z = 19;
+	printf("\n\t Логарифы от числа 10*номер вар. по основанию 2*ном.= %lf\n", log2(10 * z));
+	return 0;	
+}
