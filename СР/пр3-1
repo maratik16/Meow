@@ -1,0 +1,40 @@
+//Хуснутдинов Марат
+#include <stdio.h>
+int main(void) 
+{
+    float a, b, c;
+    float D, x1, x2, x, real, nereal;
+    printf("\n\t Уравнение a*x^2 + b*x + c = 0\n");
+    for (int i=0; i<3; i++) {
+        printf("\n\t Введите коэффициент a: ");
+        scanf("%f", &a);
+        printf("\t Введите коэффициент b: ");
+        scanf("%f", &b);
+        printf("\t Введите коэффициент c: ");
+        scanf("%f", &c);
+        D = b*b-4*a*c;
+        if (D>0 && a!=0) 
+        {
+            x1=(-b+float(D))/(2*a);
+            x2=(-b-float(D))/(2*a);
+            printf("\n\t Корни уравнения:\n\t x1 = %1.4f, x2 = %1.4f\n", x1, x2);
+        } 
+        else if (D==0 && a!=0) 
+        {
+            x= -b/(2*a);
+            printf("\n\t Корни уравнения:\n\t x = %1.4f\n", x);
+        } 
+        else 
+        {
+            real= -b/(2*a);
+            nereal=float(-D)/(2*a);
+            printf("\n\t Корни уравнения:\n\t x1 = %1.4f + %1.4fi, x2 = %1.4f - %1.4fi\n", real, nereal, real, nereal);
+        }
+        float discrepancy=a*x1*x1+b*x1+c;
+        printf("\n\t Discrepancy for x1: %1.4f\n", discrepancy);
+        discrepancy=a*x2*x2+b*x2+c;
+        printf("\t Discrepancy for x2: %1.4f\n", discrepancy);
+    }
+     printf("\n Press any key: ");
+    return 0;
+}
