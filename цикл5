@@ -1,0 +1,14 @@
+//Хуснутдинов Марат
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main()
+{
+    int n=0;
+    while (n!=5)
+{
+    cout<<"\nHello";
+    n++;
+ }
+    return 0;
+}
