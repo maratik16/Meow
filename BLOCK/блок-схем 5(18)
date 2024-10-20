@@ -1,0 +1,25 @@
+//Хуснутдинов Марат
+#include <iostream>
+#include <math.h>
+int main() {
+    float a, b, c;
+    cout<<"\nEnter a value a - "; cin>>a;
+    cout<<"\nEnter a value b - "; cin>>b;
+    cout<<"\nEnter a value c - "; cin>>c;
+    if(a>c)
+    {
+    cout<<"\nThe cat doesn't fit";
+    }
+    else
+    {
+    if(c<b)
+    {
+    сout<<"\nThe cat fits";
+    }
+    else
+    {
+    cout<<"\nThe cat doesn't fit"; 
+    }
+    }
+    return 0;
+}
