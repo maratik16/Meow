@@ -1,0 +1,35 @@
+//Хуснутдинов Марат
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main() {
+    float a, b, c, x;
+    cout<<"\n Enter a value A "; cin>>a;
+    cout<<"\n Enter a value B "; cin>>b;
+    if(a==0)
+    {
+    if(b==0)
+    {
+    cout<<"\nX any";
+    }
+    else
+    {
+    сout<<"\nThere are no solutions";
+       }
+    }
+    else
+    {
+    c=b/a;
+    
+    if (a>0)
+    {
+       cout<<"\nx>c";
+    }
+    else
+    {
+        cout<<"\nx<c";
+    }
+    }
+    cout<<"\nend";
+    return 0;
+}
