@@ -1,0 +1,24 @@
+//Хуснутдинов Марат
+#include <iostream>
+#include <math.h>
+int main() {
+    float st, zp;
+    cout<<"\nEnter a value st - "; cin>>st;
+    if(st<5)
+    {
+    zp=130;
+    }
+    else
+    {
+    if(st<=15)
+    {
+    zp=180;
+    }
+    else
+    {
+    zp=180+(st-15)*10;
+    }
+    }
+    cout<<"\nzp="<<zp;
+    return 0;
+}
