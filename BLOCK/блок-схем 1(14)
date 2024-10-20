@@ -1,0 +1,27 @@
+//Хуснутдинов Марат
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main() {
+    float x, a, c;
+    cout<<"\n Enter a value a "; cin>>a;
+    if(a==0)
+    {
+        cout<<"\nX any";
+    }
+    else
+    {
+        c=3/a;
+    
+    if (a>0)
+    {
+       cout<<"\nx<c";
+    }
+    else
+    {
+        cout<<"\nx>c";
+    }
+    }
+    cout<<"\nend";
+    return 0;
+}
