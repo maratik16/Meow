@@ -5,7 +5,7 @@ import math
 
 root = tk.Tk()
 
-root.title("Практическая №3 ИС-22/9-П Хуснутдинов Марат Илшатович")
+root.title("Практическая №1.2 1 ЗАДАНИЕ ИС-22/9-П Хуснутдинов Марат Илшатович")
 
 screen_width = root.winfo_screenwidth()
 screen_height = root.winfo_screenheight()
@@ -44,6 +44,7 @@ def result():
         except ValueError:
             LabelResult["text"] = "Тип треугольника : "+triangleType+", Невозможно вычислить площадь"
     print(S)
+
 '''----------------------------Label----------------------------'''
 LabelA = tk.Label(root, text="A", font=("Courier New", 9))
 LabelB = tk.Label(root, text="B", font=("Courier New", 9))
