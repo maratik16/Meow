@@ -5,7 +5,7 @@ import math
 
 root = tk.Tk()
 
-root.title("Практическая №1.2 ИС-22/9-П Субботин Даниэль Александрович 3 задание")
+root.title("Практическая №1.2 3 ЗАДАНИЕ ИС-22/9-П Хуснутдинов Марат Илшатович")
 
 screen_width = root.winfo_screenwidth()
 screen_height = root.winfo_screenheight()
@@ -26,18 +26,16 @@ def result():
     b=int(bButton.get())
     c=int(cButton.get())
     triangleType = "none"
-    if pow(a,2)<pow(b,2)+pow(c,2): # Остроугольный треуг
-        triangleType = "Остроугольный"
+    if pow(a,2)<pow(b,2)+pow(c,2):
+        triangleType = "Остроугольный треугольник"
         LabelResult["text"] = "Тип треугольника : "+triangleType
-    elif pow(a,2)==pow(b,2)+pow(c,2): #Прямоугольный треуг
-        triangleType = "Прямоугольный"
+    elif pow(a,2)==pow(b,2)+pow(c,2):
+        triangleType = "Прямоугольный треугольник"
         LabelResult["text"] = "Тип треугольника : "+triangleType
-    else: #Тупоугольный
-        triangleType = "Тупоугольный"
+    else: 
+        triangleType = "Тупоугольный треугольник"
         LabelResult["text"] = "Тип треугольника : "+triangleType
-
-'''Label'''
-
+'''----------------------------Label----------------------------'''
 LabelA = tk.Label(root, text="A", font=("Courier New", 9))
 LabelB = tk.Label(root, text="B", font=("Courier New", 9))
 LabelC = tk.Label(root, text="C", font=("Courier New", 9))
@@ -50,11 +48,9 @@ LabelResult.place(x=200, y=92)
 
 Labels = [LabelA, LabelB, LabelC]
 
-for i in range(len(Labels)): # вычисляет длину массива чтобы применялось к объектам
+for i in range(len(Labels)):
     Labels[i].place(x=20+(125*i), y=20)
-
-
-'''Buttons'''
+'''----------------------------Buttons----------------------------'''
 check = (root.register(is_valid), "%P")
 
 aButton = tk.Entry(validate="key", validatecommand=check)
