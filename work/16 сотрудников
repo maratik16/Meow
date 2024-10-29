@@ -1,0 +1,18 @@
+#include <iostream>
+#include <vector>
+#include <algorithm>
+
+int main() {
+    const int numEmployees = 16;
+    std::vector<double> salaries(numEmployees);
+
+    std::cout << "Введите среднемесячные зарплаты сотрудников:\n";
+    for (int i = 0; i < numEmployees; ++i) {
+        std::cin >> salaries[i];
+    }
+
+    double maxSalary = *std::max_element(salaries.begin(), salaries.end());
+    std::cout << "Наибольшая среднемесячная зарплата в отделе: " << maxSalary << std::endl;
+
+    return 0;
+}
