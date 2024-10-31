@@ -1,0 +1,45 @@
+#include <iostream>
+using namespace std;
+int main() {
+    double inch, mm;
+    int cm, m;
+    const double MM_in_INCH = 25.4;
+    cout << "Введите: ";
+    cin >> inch;
+    mm = inch * MM_in_INCH;
+    m = mm / 1000;
+    mm -= m * 1000;  
+    cm = mm / 10;
+    mm -= cm *10; 
+    cout << inch << " inch is: " << m << " m " << cm << " cm " << mm << " mm.\n"; 
+    return 0;
+}
+
+
+
+
+
+
+#include <iostream>
+using namespace std;
+int main() {
+    double a, b, c, d;
+
+    cout << "Введите длину катетов первого треугольника(a and b): ";
+    cin >> a >> b;
+
+    cout << "Введите длины катетов второго треугольника(c and d): ";
+    cin >> c >> d;
+
+    bool similar = (a / c == b / d) || (a / d == b / c);
+
+    if (similar) {
+        cout << "Треугольники похожи " << endl;
+    } 
+    else 
+    {
+        cout << "Треугольники не похожи друг на друга " << endl;
+    }
+
+    return 0;
+}
